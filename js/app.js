@@ -144,8 +144,8 @@ const album1 = {
   
   // Exercise 4:  Update the released property of album3 from a string into a Date object using that string
   
-  
-  
+  album3.albumDetails.released = new Date(album3.albumDetails.released);
+
   const album4 = {
     title: 'Remain in Light',
     albumDetails: {
@@ -156,7 +156,7 @@ const album1 = {
   
   // Exercise 5:  Add a property named label with the value 'Sire' to album4's albumDetails property
   
-  
+  album4.albumDetails.label = "Sire";
   
   
   const album5 = {
@@ -170,7 +170,7 @@ const album1 = {
   
   // Exercise 6:  Update the value 'emi' within album5's labels array to 'EMI'
   
-  
+  album5.albumDetails.labels[1] = "EMI";
   
   
   const album6 = {

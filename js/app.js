@@ -144,6 +144,7 @@ const album1 = {
   
   // Exercise 4:  Update the released property of album3 from a string into a Date object using that string
   
+  // re-assigned released in album3 using the native new Date function
   album3.albumDetails.released = new Date(album3.albumDetails.released);
 
   const album4 = {
@@ -156,6 +157,7 @@ const album1 = {
   
   // Exercise 5:  Add a property named label with the value 'Sire' to album4's albumDetails property
   
+  // go to the album4 object, go to the albumDetails object/property of album4, and create a new property named label and enter "Sire" as the value of that property
   album4.albumDetails.label = "Sire";
   
   
@@ -170,6 +172,7 @@ const album1 = {
   
   // Exercise 6:  Update the value 'emi' within album5's labels array to 'EMI'
   
+  // go to album5 object, go to albumDetails object/property, go to the labels array, re-assign index position 1 value to "EMI"
   album5.albumDetails.labels[1] = "EMI";
   
   
@@ -185,7 +188,8 @@ const album1 = {
   // Exercise 7:  Assign album6's formats array to a variable named formats
   
   
-  
+  // define a variable named formats and assign the value of formats array within the albumDetails object/property of the album6 object into the variable
+  const formats = album6.albumDetails.formats
   
   const album7 = {
     title: 'Naked',
@@ -208,19 +212,23 @@ const album1 = {
   
   // Exercise 8:  Using the talkingHeadsAlbums array, assign album5's labels property to a variable named labels
   
-  
+  // define a variable named labels and go into talkingHeadsAlbum array, go to index position 4 which is album5, and go to the albumDetails property, and go to labels, pull the value of labels
+  const labels = talkingHeadsAlbums[4].albumDetails.labels;
   
   
   // Exercise 9:  Using the talkingHeadsAlbums array, assign album7's released property to album6's released property
   
-  
+  // go into index position 5 of talkingHeadsAlbums which is album6, go to the released property within the albumDetails object, this is the variable we are assigning a value to via an equal sign
+  // following the equal sign, go to index position 6 of talkingHeadsAlbums, which is album 7, get the value of released property within the albumDetails object, and place that in the spot we go to in the earlier part of the code within the released property of the albumDetails object in the album6 object
+  talkingHeadsAlbums[5].albumDetails.released = talkingHeadsAlbums[6].albumDetails.released;
   
   
   // Exercise 10:  Using the pre-defined variable named albumIdx below, assign the albumDetails object of the album located within the talkingHeadsAlbums array at the index represented by the value of albumIdx to a variable named albumDetails
   
   let albumIdx = 4;
   
-  
+  // define a variable named albumDetails and assign to it the value found within albumDetails object/property within the album located in the 4th index position of the array talkingHeadsAlbum
+  const albumDetails = talkingHeadsAlbums[albumIdx].albumDetails;
   
   
   /********** Don't look below here **********/
